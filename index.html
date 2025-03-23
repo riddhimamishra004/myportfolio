@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/174db51506.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section  -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Portfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p> 
+                <p>Hello!</p>
+                <h1>I'm <span>Riddhima </span><br>Mishra</h1>
+
+                <!-- Element to contain animated typing -->
+                <div id="typing-animation"></div>
+            </div>
+            <a href="Ridd.png.pdf" target="_blank" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+    <!-- About Section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.jpg" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p class="summary">I am Riddhima Mishra, a passionate web developer skilled in HTML, CSS, Core Java, and MySQL.
+                         I love building user-friendly websites and exploring new technologies! 
+                        </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="openTab('experience')">EXPERIENCE</p>
+                        <p class="tab-links" onclick="openTab('education')">EDUCATION</p>
+                    </div>
+                    <div id="skills" class="tab-contents active-tab">
+                        <ul>
+                            <li>
+                                <span>Programming Languages</span>
+                                <li> HTML, CSS, JavaScript,  Java</li>
+                            </li>
+                            <li>
+                                <span>Frameworks</span>
+                                <li>Bootstrap</li>
+                            </li>
+                            <li>
+                                <span>Database</span>
+                                <li> SQL</li>
+                            </li>
+                            <li>
+                                <span>Version Control</span>
+                                <li> GitHub</li>
+                            </li>
+                            
+                         </ul>
+
+
+                    </div>
+                    <div id="experience" class="tab-contents">
+                        <ul>
+                            <li><strong>Fresher</strong></li>
+                          
+                        </ul> 
+                    </div>
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li>
+                                <span>JULY 22- JUNE 26</span>
+                                <p><strong>Bachelor of Technology</strong> - Computer Science and Engineering  | Sushila Devi Bansal Colege Of Engineering  Indore</p>
+                                <li>Score - 8.13 SGPA</li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">PROJECTS</h1>
+            <p>Below are the sample Web Application Development projects on Html, Css,and JavaScript Frontend technologies.</p>
+            <div class="work-list">
+                <div class="work">
+                    <img src="c.png.png">
+                    <div class="layer">
+                        <h3>CALCUTATOR</h3>
+                        <p>Calculator using html css and js.</p>
+                        <a href="https://github.com/riddhimamishra004/Calculator.git"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="e.png.png">
+                    <div class="layer">
+                        <h3>E-comerac website</h3>
+                        <p>"An innovative e-commerce platform offering seamless shopping, secure payments, and fast delivery for a hassle-free experience."</p>
+                        <a href="https://github.com/riddhimamishra004/E-shopping-Wrbsites.git"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="m.png.png">
+                    <div class="layer">
+                        <h3>MEESHO CLONE</h3>
+                        <p>I have created meesho clone in which we used only html css and JavaScript.</p>
+                         <a href="https://github.com/riddhimamishra004/Meesho-clone.git" ><i class="fa-brands fa-github"></i></a> 
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/riddhimamishra004" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Contect Section  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">CONTACT ME</h1>
+                    <p><i class="fa-regular fa-envelope"></i>riddhimamishra004@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-6387******</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/riddhimamishra004" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    
+                        <a href="https://www.linkedin.com/in/riddhima-mishra-171bbb25b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="@riddhimamishra3953" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                   
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" style="display: block;">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Riddhima's Portfolio.</p>
+        </div>
+    </div>
+
+    <!-- Scripts  -->
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links")
+        let tabcontents = document.getElementsByClassName("tab-contents")
+
+        function openTab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        let sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.left = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.left = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbycK7w2gpGLvjzAWKelBoQz-WTryAX3EwBxtIxU7v48IWMSj0WXY9322y5XxXr56-oU/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message is sent! Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- Typing animation  -->
+    <script>
+        // Initialize the typing animation
+        const typingAnimationElement = document.getElementById('typing-animation');
+
+        // Create an array of typing text
+        const typingTexts = [
+            'web developer' ,
+            'Frontend Developer  ',
+        ];
+
+        // Create a function to display the typing animation for a given text
+        function playTypingAnimation(text) {
+            // Loop through each character and add it to the element
+            for (let i = 0; i < text.length; i++) {
+                setTimeout(() => {
+                    typingAnimationElement.textContent += text[i];
+                }, i * 200); // Increase the delay to slow down the typing animation
+            }
+
+            // Once the animation is complete, reset the text and start over
+            setTimeout(() => {
+                typingAnimationElement.textContent = '';
+                playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+            }, text.length * 200);
+        }
+
+        // Start the typing animation loop
+        playTypingAnimation(typingTexts[0]);
+
+    </script>
+</body>
+
+</html>
